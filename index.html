@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <h1>Student Management System</h1>
+
+        <section class="form-container">
+            <h2>Add New Student</h2>
+            <form id="student-form">
+                <div class="input-group">
+                    <label for="student-name">Student Name:</label>
+                    <input type="text" id="student-name" placeholder="Enter name" required> </div>
+                <div class="input-group">
+                    <label for="student-grade">Student Grade:</label>
+                    <input type="number" id="student-grade" placeholder="Enter grade" min="0" max="100" required> </div>
+                <button type="submit" id="add-student-btn">Add Student</button> </form>
+        </section>
+
+        <hr>
+
+        <section class="analytics-container">
+            <button id="calc-average-btn">Calculate Class Average</button> <button id="find-top-btn">Find Top Student</button>
+             <div id="results-display" class="results">
+                </div>
+        </section>
+
+        <hr>
+
+        <section class="list-container">
+            <h2>Student Records</h2>
+            <table id="student-table">
+                <thead>
+                    <tr>
+                        <th>ID</th> <th>Name</th> <th>Grade</th> <th>Actions</th> </tr>
+                </thead>
+                <tbody id="student-list-body">
+                    </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="script.js"></script> </body>
+</html>
